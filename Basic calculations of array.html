@@ -1,0 +1,66 @@
+<!-- Basic calculations of array -->
+<script>
+
+
+//calculations for sum
+
+const numbers = [1, 2, 3, 4, 5];
+document.write("<h3>·sum</h3>");
+const result = sumarray(numbers);
+
+function sumarray(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+document.write("Array sum is:"+result);
+
+//calculations for subtract
+
+const array1 = [5, 8, 10];
+const array2 = [2, 4, 6, 8];
+document.write("<h3>·subtract</h3>");
+const result1 = subtractarray(array1, array2);
+
+function subtractarray(arr1, arr2) {
+  const result1 = [];
+  const length = Math.max(arr1.length, arr2.length);
+
+
+  for (let i = 0; i < length; i++) {
+    const num1 = arr1[i] || 0; 
+    const num2 = arr2[i] || 0; 
+    const num3=num1-num2;
+    result1.push(num3);
+  }
+
+  return result1;
+}
+document.write("Array subtract is :"+result1); 
+
+//calculations for multiplication
+
+const multiplicationarray = [10,20,30,40,50];
+    document.write("<h3>·multiplication</h3>");    
+    let tex = "";
+    let ans = multiplicationarray.map(mul);
+    function mul(value, index, array) {
+        return value * 2;   
+    }
+    document.write("Array multiplication is :"+ans+"</br>");
+
+//calculations for divide   
+
+const dividearray = [10,20,30,40,50];
+    document.write("<h3>·divide</h3>");    
+    let tet = "";
+    let ans1 = dividearray.map(div);
+    function div(value, index, array) {
+        return value / 2;   
+    }
+    document.write("Array divide is :"+ans1+"</br>");
+
+</script>
+    

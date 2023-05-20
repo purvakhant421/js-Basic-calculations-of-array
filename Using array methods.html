@@ -1,0 +1,81 @@
+ <!-- Using array methods ( min 8 methods use) -->   
+<script>
+    //length
+    //Count all array element
+    var  arr = ["Php", "Node", "Javascript","Reactjs","Flutter"];
+    document.write("<h4>·length</h4>")
+    document.write("Array is : " + arr +"</br>");
+    document.write("Array length = "+arr.length+"</br></br>");
+
+    //sort method
+    //sorts the elements as strings in alphabetical and ascending order
+    var arr1= ["C","Java","Flutter","Node js","PHP","Ruby"];
+    document.write("<h4>·sort</h4>")
+    document.write("Array is : " + arr1 +"</br>");
+    var result = arr1.sort(); 
+    document.write("Ans = "+result+"</br></br>");
+
+
+    //everse() method
+    //reverse() method reverses the order of the elements in an array
+    var arr2 = ["AngulaJS","Node.js","JQuery"]; 
+    document.write("<h4>·reverse</h4>")
+    document.write("Array is : " + arr2 +"</br>");
+    var rev = arr2.reverse(); 
+    document.write("Ans = "+rev+"</br></br>");
+
+
+    //pop() method
+    //remove of last array
+    var arr3 = ["AngulaJS","Node.js","JQuery"]; 
+    document.write("<h4>·pop</h4>")
+    document.write("Array is : " + arr3 +"</br>");
+    var ans = arr3.pop(); 
+    document.write("Ans = "+arr3);
+
+
+    //push() method
+    //add last element of array
+    var arr4 = ["AngulaJS","Node.js"]; 
+    document.write("<h4>·push</h4>")
+    document.write("Array is : " + arr4 +"</br>");
+    var ans = arr4.push("PHP"); 
+    document.write("Ans = "+arr4);
+
+    //shift() method
+    //shift() method removes the first element of an array
+    var  arr5 = ["Php", "Node", "Javascript","Reactjs","Flutter"];
+    document.write("<h4>·shift</h4>")
+    document.write("Array is : " +  arr5  +"</br>");
+    var ans = arr5 .shift();
+    document.write("Ans =" +arr5 );
+
+
+    //unshift() method
+    //unshift() (array first add) method adds new elements to the start position of an array
+    var  arr6 = ["Php", "Node", "Javascript","Reactjs","Flutter"];
+    document.write("<h4>·unshift</h4>")
+    document.write("Array is : " +  arr6  +"</br>");
+    var ans = arr6.unshift("Android");
+    document.write("Ans =" +arr6 );
+
+
+    //splice() methods
+    //splice() methods can be used to remove array elements at position
+    var  arr7 = ["Php", "Node", "Javascript","Reactjs","Flutter"];
+    document.write("<h4>·splice</h4>")
+    document.write("Array is : " +  arr7  +"</br>");
+    var ans = arr7.splice(0,1); 
+    document.write("Array Splice = "+arr7);
+
+
+    //slice() method
+    //slice() method use piece an array into new array
+    var arr8 = ["Php", "Node", "Javascript","Reactjs","Flutter"];
+    document.write("<h4>·slice</h4>")
+    document.write("Array is : " +  arr8  +"</br>");
+    var ans = arr8.slice(2);
+    document.write("Array slice = "+ans);
+
+</script>
+
